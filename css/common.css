@@ -1,0 +1,142 @@
+body{
+	color:#6a6f8c;
+	background:#c8c8c8;
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+.body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+body > header {
+    position: relative;
+    padding: 1em;
+    font-size: 0.8em;
+    font-family: Verdana;
+    background-color:#0b4bb9 ;
+    color: white;
+    top: 0;
+}
+.signup{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup h1{
+  display: inline-block;
+  padding:10px;
+  margin: 0;
+  font-size: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.signup form{
+  display: inline-block;
+  right: 2em;
+}
+.signup a{
+  text-decoration: underline;
+}
+
+.signup button{
+  margin-left: 10px;
+}
+
+a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: inherit;
+}
+
+.button {
+  position: absolute; 
+}
+
+.menu{
+  height: 62px;
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+.logoutbutton{
+  margin-bottom: 10px;
+}
+
+/*FOOTER*/
+.footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {  
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+  }
+
+footer p {
+  font-size: 15px;
+  color: white;
+
+}
+
+/*MEDIA QUERIES */
+
+@media (max-width: 600px) {
+  .signup h1 {
+    font-size: 20px;
+  }
+  .logout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logout a {
+    margin-bottom: 10px;
+  }
+  .menu {
+    padding: 10px 20px;
+    height: 120px;
+  }
+  #footer {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .signup h1 {
+    white-space: normal; 
+    overflow: visible; 
+    text-overflow: clip; 
+  }
+}
